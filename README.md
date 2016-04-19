@@ -1,5 +1,5 @@
 # Tania 8
 
-A Drupal 8 theme with supporting bi directional styles
+A Drupal 8 theme with supporting bi directional styles.
 
-you can have diffrent files for RTL and LTR languages
+You can have different files for RTL and LTR languages.
