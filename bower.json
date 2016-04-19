@@ -1,0 +1,8 @@
+{
+  "name": "tania",
+  "dependencies": {
+    "bi-app-sass": "*",
+    "bootstrap-sass-bi-directional": "*",
+    "slick-carousel": "~1.5.9"
+  }
+}
