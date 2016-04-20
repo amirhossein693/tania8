@@ -1,7 +1,16 @@
-global-styling:
+global-styling-ltr:
   version: VERSION
   css:
     theme:
-     dist/css/style.css
+     dist/css/style-ltr.css: {}
   js:
-    dist/js/script.bundle.js
+    dist/js/script.bundle.js: {}
+
+global-styling-rtl:
+  version: VERSION
+  css:
+    theme:
+     dist/css/style-rtl.css: {}
+  js:
+    dist/js/script.bundle.js: {}
+

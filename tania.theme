@@ -1,0 +1,32 @@
+<?php
+
+function tania_page_attachments_alter(&$variables) {
+  $language_interface = \Drupal::languageManager()->getCurrentLanguage();
+  $variables['#attached']['library'][] = 'tania/global-styling-' . $language_interface->getDirection();
+}
+
+function tania_preprocess_page(&$variables) {
+   $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}
+
+function tania_theme_suggestions_block_alter(&$suggestions, $variables) {
+  $block_id = $variables['elements']['#id'];
+  $block = \Drupal\block\Entity\Block::load($block_id);
+  $region = $block->getRegion();
+  $suggestions[] = 'block__' . $region;
+
+  $content = $variables['elements']['content'];
+    if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+      $suggestions[] = 'block__' . $content['#block_content']->bundle() . '__bundle';
+    }
+
+}
+
+function tania_theme_suggestions_field_alter(&$suggestions, $variables) {
+  $element = $variables['element'];
+  $suggestions[] = 'field__' . $element['#field_type'] . '__' . $element['#bundle'];
+}
+
+function tania_preprocess_image(&$variables) {
+  $variables['attributes']['class'] = 'img-responsive';
+}

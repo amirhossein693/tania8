@@ -3,13 +3,11 @@ type: theme
 description: Tania theme for Drupal 8
 core: 8.x
 
-libraries:
-  - tania/global-styling
-
 regions:
   header: Header
   navigation:  Navigation
   content: Content  # the content region is required
   sidebar: Sidebar
+  media: Media
   footer: Footer
 
