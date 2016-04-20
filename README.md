@@ -13,20 +13,20 @@ First of all go to your drupal 8 project directory and clone this theme there:
 cd [project-directory]/themes/
 ```
 
-And than
+And then
 
 
 ```shell
 git clone https://github.com/amirhossein693/tania8.git 
 ```
 
-After that you need to run this command to install node modules:
+After that, you need to run this command to install node modules:
 
 ```shell
 npm install 
 ```
 
-And this command for install frontend package like bootstrap
+And then run this command to install the frontend packages like bootstrap
 
 ```shell
 bower install 
@@ -38,7 +38,10 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 grunt build
 ```
 
-Clone the project, Install grunt modules and run the 'build' task.
 Enjoy it.
 
-Also you can use 'serve' task for Developing mode.
+Also you can use the 'serve' task for Developing mode.
+
+```shell
+grunt serve
+```
