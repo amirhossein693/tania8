@@ -7,7 +7,7 @@ You can have different files for RTL and LTR languages.
 ## Getting Started
 This package requires GruntJS, NodeJS, NPM 
 
-In First Step Go to your drupal 8 project directory and clone this theme there:
+In first Step Go to your drupal 8 project directory and clone this theme there:
 
 ```shell
 cd [project-directory]/themes/
